@@ -18,7 +18,7 @@ function BarCodeTableRow({ product, index, setSelectedProduct }: any) {
       id={product.id}
       key={product.id}
       position={index}
-      onNavigation={() => setSelectedProduct(product)}
+      onClick={() => setSelectedProduct(product)}
     >
       <IndexTable.Cell className="w-[6%]">{thumbMarkup}</IndexTable.Cell>
       <IndexTable.Cell>
